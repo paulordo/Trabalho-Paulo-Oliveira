@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Currículo Paulo Oliveira</title>
-    <meta charset="utf-8">
-  </head>
-<div class="body-container">
-  <body>
-    <button class="button voltar" onclick="document.location='main.html'">Página Inicial</button>
-    <h1>Sobre mim</h1>
-  </body>
-</div>
+<head>
+  <title>Currículo Paulo Oliveira</title>
+  <!-- Define a codificação de caracteres -->
+  <meta charset="utf-8">
+</head>
+<body>
+  <!-- Botão de retorno à página inicial -->
+  <button class="botao voltar" onclick="document.location='index.html'">Página Inicial</button>
+  <!-- Cabeçalho principal -->
+  <h1>Sobre mim</h1>
 
-<div class="container">
-  <h2>Olá, sou o Paulo, um estudante de 20 anos do curso de Análise e Desenvolvimento de Sistemas (ADS).
+  <!-- Conteúdo do currículo -->
+  <div class="container">
+    <!-- Informações sobre Paulo Oliveira -->
+    <h2>Olá, sou o Paulo, um estudante de 20 anos do curso de Análise e Desenvolvimento de Sistemas (ADS).
       Tenho uma paixão pela tecnologia e estou comprometido em desenvolver minha carreira nessa área.
       Desejo aprender cada vez mais todos os dias para me tornar um profissional capacitado e de respeito.
-  </h2>
-  <img src="img/cutecat.png" width="30%" height="30%">
-</div>
+    </h2>
+    <!-- Imagem -->
+    <img src="img/cutecat.png" width="30%" height="30%">
+  </div>
 
-<style>
-
-.body-container {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: auto;
-  max-height: 100px;
-  margin-bottom: 50px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffffbd;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.button {
-  max-width: 200px;
-  margin: 0 auto;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  border: 2px solid transparent;
-  transition: all 0.3s ease;
-  cursor:pointer;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-
-.button:hover {
-  background-color: white;
-  color: black;
-  border-color: black;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-h1 {
-  color: #e2e2e2;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 50px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+  <!-- Estilos CSS -->
+  <style>
+    /* Estilo do contêiner do corpo */
+    .body-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: auto;
+      max-height: 100px;
+      margin-bottom: 50px;
+    }
+    
+    /* Estilo do contêiner principal */
+    .container {
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffffbd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Estilo do botão */
+    .botao {
+      max-width: 200px;
+      margin: 0 auto;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      cursor:pointer;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-img {
-  margin: 0 auto;
-  justify-content: center;
-  border: 2px solid black;
-  border-radius: 50%;
-  max-width: 300px;
-  margin-bottom: 20px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  animation: rotateImage 0.5s; 
-}
-h2 {
-  color: #000000;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24px;
-  line-height: 1.6; 
-  margin-top: 20px; 
-  margin-bottom: 40px; 
-  padding: 0 20px; 
-}
-body {
-  background-color: #6a000f;
-  text-align: center;
-  color: #bfd0d4;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-  }
-  
-  @keyframes rotateImage {
+    /* Estilo do botão ao passar o mouse */
+    .botao:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Estilo do cabeçalho principal */
+    h1 {
+      color: #e2e2e2;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  
+    }
+
+    /* Estilo da imagem */
+    img {
+      margin: 0 auto;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 50%;
+      max-width: 300px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: rotateImage 0.5s; 
+    }
+    
+    /* Estilo do cabeçalho secundário */
+    h2 {
+      color: #000000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 24px;
+      line-height: 1.6; 
+      margin-top: 20px; 
+      margin-bottom: 40px; 
+      padding: 0 20px; 
+    }
+    
+    /* Estilo do corpo da página */
+    body {
+      background-color: #6a000f;
+      text-align: center;
+      color: #bfd0d4;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 40px;
+    }
+    
+    /* Animação da imagem */
+    @keyframes rotateImage {
       from {
         transform: rotate3d(0, 1, 1, 0deg); 
       }
@@ -107,4 +121,6 @@ body {
         transform: rotate3d(0, 1, 1, 360deg); 
       }
     }
-</style>
+  </style>
+</body>
+</html>

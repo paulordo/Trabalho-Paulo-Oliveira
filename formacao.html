@@ -3,8 +3,10 @@
 <head>
   <title>Currículo Paulo Oliveira</title>
   <meta charset="utf-8">
+  <!-- Estilos CSS -->
   <style>
 
+    /* Estilo da imagem */
     img {
       margin: 30px auto;
       display: block;
@@ -16,6 +18,7 @@
       animation: rotateImage 0.5s; 
     }
 
+    /* Estilo do contêiner de formações */
     .formacoes-container {
       display: flex;
       flex-wrap: wrap; 
@@ -28,6 +31,7 @@
       margin: 0 auto;
     }
 
+    /* Estilo de cada formação */
     .formacao1, .formacao2, .formacao3, .formacao4 {
       flex: 1; 
       margin: 10px; 
@@ -38,6 +42,7 @@
       max-width: 280px;
     }
 
+    /* Estilo dos títulos */
     h2, h3, h4, h5 {
       text-align: center;
       color: #000000;
@@ -45,6 +50,7 @@
       font-size: 25px; 
     }
 
+    /* Estilo do corpo da página */
     body {
       background-color: #6a000f;
       text-align: center;
@@ -53,6 +59,7 @@
       font-size: 40px;
     }
 
+    /* Estilo dos botões */
     .button {
       max-width: 200px;
       margin: 0 auto;
@@ -69,6 +76,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
+    /* Estilo dos botões ao passar o mouse */
     .button:hover {
       background-color: white;
       color: black;
@@ -76,6 +84,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
+    /* Estilo do título principal */
     h1 {
       color: #ffffff;
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -83,6 +92,7 @@
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
+    /* Estilo do contêiner do corpo */
     .body-container {
       padding: 20px;
       border-radius: 10px;
@@ -90,34 +100,45 @@
       max-height: 100px;
       margin-bottom: 50px;
     }
+
+    /* Animação da imagem */
     @keyframes rotateImage {
-  from {
-    transform: rotate3d(0, 1, 1, 0deg); 
-  }
-  to {
-    transform: rotate3d(0, 1, 1, 360deg);
-  }
-}
+      from {
+        transform: rotate3d(0, 1, 1, 0deg); 
+      }
+      to {
+        transform: rotate3d(0, 1, 1, 360deg);
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Contêiner do corpo -->
   <div class="body-container">
-    <button class="button voltar" onclick="document.location='main.html'">Página Inicial</button>
+    <!-- Botão de retorno à página inicial -->
+    <button class="button voltar" onclick="document.location='index.html'">Página Inicial</button>
+    <!-- Título principal -->
     <h1>Formações</h1>
+    <!-- Contêiner das formações -->
     <div class="formacoes-container">
+      <!-- Formação 1 -->
       <div class="formacao1">
         <h2>Análise e desenvolvimento de sistemas - Uninter - Cursando</h2>
       </div>
+      <!-- Formação 2 -->
       <div class="formacao2">
         <h3>Hardware - Cenaic - Concluído em 09/2019</h3>
       </div>
+      <!-- Formação 3 -->
       <div class="formacao3">
         <h4>Gestão Empresarial, Recursos Humanos, Marketing E Logística - Instituto Avanza - Concluído em 09/2019</h4>
       </div>
+      <!-- Formação 4 -->
       <div class="formacao4">
         <h5>Informática - Cenaic - Concluído em 12/2019</h5>
       </div>
     </div>
+    <!-- Imagem -->
     <img src="img/study cat.jpeg" width="30%" height="30%">
   </div>
 </body>

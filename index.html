@@ -3,22 +3,31 @@
 <head>
   <title>Currículo Paulo Oliveira</title>
   <meta charset="utf-8">
- 
 </head>
 <body>
+<!-- Contêiner principal -->
 <div class="container">
+  <!-- Título -->
   <h1>Paulo Oliveira</h1>
+  <!-- Imagem -->
   <img src="img/eu.jpg" width="80%" height="80%">
+  <!-- Contêiner de botões -->
   <div class="button-container">
-    <button class="button sobremim" onclick="document.location='sobremim.html'">Sobre mim</button>
-    <button class="button formacao" onclick="document.location='formacao.html'">Formações</button>
-    <button class="button portfolio" onclick="document.location='portfolio.html'">Portfólio</button>
-    <button class="button contato" onclick="document.location='contato.html'">Contato</button>    
+    <!-- Botão "Sobre mim" -->
+    <button class="botao sobremim" onclick="document.location='sobremim.html'">Sobre mim</button>
+    <!-- Botão "Formações" -->
+    <button class="botao formacao" onclick="document.location='formacao.html'">Formações</button>
+    <!-- Botão "Portfólio" -->
+    <button class="botao portfolio" onclick="document.location='portfolio.html'">Portfólio</button>
+    <!-- Botão "Contato" -->
+    <button class="botao contato" onclick="document.location='contato.html'">Contato</button>    
   </div>
 </div>
 </body>
 </html>
+
 <style>
+/* Estilo do contêiner principal */
 .container {
   display: flex;
   flex-direction: column;
@@ -29,6 +38,7 @@
   max-width: 600px;
   margin: 0 auto;
 }
+/* Estilo da imagem */
 img {
   margin: 0 auto;
   display: flex;
@@ -40,6 +50,7 @@ img {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   animation: rotateImage 0.5s; 
 }
+/* Estilo do título */
 h1 {
   display: flex;
   flex-direction: column;
@@ -50,7 +61,7 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   padding: 20px;
 }
-
+/* Estilo do corpo da página */
 body {
   background-color: #6a000f;
   text-align: center;
@@ -58,15 +69,15 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 40px;
 }
-
-.button-container {
+/* Estilo do contêiner dos botões */
+.botao-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-
-.button {
+/* Estilo dos botões */
+.botao {
   display: inline-block;
   padding: 10px 20px;
   background-color: black;
@@ -80,14 +91,14 @@ body {
   cursor:pointer;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-.button:hover {
+/* Estilo dos botões ao passar o mouse */
+.botao:hover {
   background-color: white;
   color: black;
   border-color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-    
+/* Animação da imagem */
 @keyframes rotateImage {
   from {
     transform: rotate3d(0, 1, 1, 0deg); 
