@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Currículo Paulo Oliveira</title>
+  <meta charset="utf-8">
+  <style>
+
+    img {
+      margin: 30px auto;
+      display: block;
+      border: 2px solid black;
+      border-radius: 50%;
+      max-width: 300px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: rotateImage 0.5s; 
+    }
+
+    .formacoes-container {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      background-color: #ffffffbd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .formacao1, .formacao2, .formacao3, .formacao4 {
+      flex: 1; 
+      margin: 10px; 
+      background-color: #72727236;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 280px;
+    }
+
+    h2, h3, h4, h5 {
+      text-align: center;
+      color: #000000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 25px; 
+    }
+
+    body {
+      background-color: #6a000f;
+      text-align: center;
+      color: #bfd0d4;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 40px;
+    }
+
+    .button {
+      max-width: 200px;
+      margin: 0 auto;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+      cursor:pointer;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .button:hover {
+      background-color: white;
+      color: black;
+      border-color: black;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: #ffffff;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 60px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .body-container {
+      padding: 20px;
+      border-radius: 10px;
+      max-width: auto;
+      max-height: 100px;
+      margin-bottom: 50px;
+    }
+    @keyframes rotateImage {
+  from {
+    transform: rotate3d(0, 1, 1, 0deg); 
+  }
+  to {
+    transform: rotate3d(0, 1, 1, 360deg);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="body-container">
+    <button class="button voltar" onclick="document.location='main.html'">Página Inicial</button>
+    <h1>Formações</h1>
+    <div class="formacoes-container">
+      <div class="formacao1">
+        <h2>Análise e desenvolvimento de sistemas - Uninter - Cursando</h2>
+      </div>
+      <div class="formacao2">
+        <h3>Hardware - Cenaic - Concluído em 09/2019</h3>
+      </div>
+      <div class="formacao3">
+        <h4>Gestão Empresarial, Recursos Humanos, Marketing E Logística - Instituto Avanza - Concluído em 09/2019</h4>
+      </div>
+      <div class="formacao4">
+        <h5>Informática - Cenaic - Concluído em 12/2019</h5>
+      </div>
+    </div>
+    <img src="img/study cat.jpeg" width="30%" height="30%">
+  </div>
+</body>
+</html>

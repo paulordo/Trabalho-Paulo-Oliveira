@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Portfólio Paulo Oliveira</title>
+    <meta charset="utf-8">
+    <style>
+      
+      img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin: 30px auto;
+      display: block;
+      border: 2px solid black;
+      border-radius: 50%;
+      max-width: 300px;
+      margin-bottom: 20px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: rotateImage 0.5s; 
+    }
+
+      h1 {
+        color: #ffffff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 60px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      body {
+        background-color: #6a000f;
+        text-align: center;
+        color: #bfd0d4;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+      }
+
+      .portfolio-container {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      background-color: #ffffffbd;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 0 auto;
+      margin: 0 auto;
+    }
+
+      .portfolio1, .portfolio2, .portfolio3 {
+      flex: 1; 
+      margin: 10px; 
+      background-color: #72727236;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 0 auto;
+    }
+
+    h2, h3, h4 {
+      text-align: center;
+      color: #000000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 25px; 
+    }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+        cursor:pointer;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .button:hover {
+        background-color: white;
+        color: black;
+        border-color: black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .body-container {
+      padding: 20px;
+      border-radius: 10px;
+      max-width: auto;
+      max-height: 100px;
+      margin-bottom: 50px;
+    }
+      @keyframes rotateImage {
+        from {
+          transform: rotate3d(0, 1, 1, 0deg); 
+        }
+        to {
+          transform: rotate3d(0, 1, 1, 360deg);
+        }
+      }
+</style>
+    </style>
+  </head>
+  <body>
+    <button class="button voltar" onclick="document.location='main.html'">Página Inicial</button>
+    <h1>Portfólio</h1>
+    <div class="body-container">
+      <div class="portfolio-container">
+        <div class="portfolio1">
+          <h2>EPI SYSTEM CONTROL - Consiste em um controlador de requisições de entrega de EPI para empresas. 
+            Podendo gravar o histórico do funcionário com a data exata da entrega - Python/HTML/CSS/JS</h2>
+        </div>
+        <div class="portfolio2">
+          <h3>Cofrinho virtual - Consiste em um software que armazena valores que podem ser retirados e/ou somados para
+            se obter o total armazenado - JAVA</h3>
+        </div>
+        <div class="portfolio3">
+          <h4>Gerador de gatos aleatório - Consiste em um site em que a pessoa adiciona um nome qualquer a lista e ao clicar sob ele
+            será redirecionada para a foto de um gato aleatório com o uso de uma API - HTML/CSS/JS</h4>
+        </div>
+      </div>
+      <img src="img/working cat.webp" width="30%" height="30%">
+    </div>
+  </body>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Currículo Paulo Oliveira</title>
+  <meta charset="utf-8">
+ 
+</head>
+<body>
+<div class="container">
+  <h1>Paulo Oliveira</h1>
+  <img src="img/eu.jpg" width="80%" height="80%">
+  <div class="button-container">
+    <button class="button sobremim" onclick="document.location='sobremim.html'">Sobre mim</button>
+    <button class="button formacao" onclick="document.location='formacao.html'">Formações</button>
+    <button class="button portfolio" onclick="document.location='portfolio.html'">Portfólio</button>
+    <button class="button contato" onclick="document.location='contato.html'">Contato</button>    
+  </div>
+</div>
+</body>
+</html>
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffbd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+  max-width: 600px;
+  margin: 0 auto;
+}
+img {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 50%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: rotateImage 0.5s; 
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 60px;
+  margin-top: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+body {
+  background-color: #6a000f;
+  text-align: center;
+  color: #bfd0d4;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor:pointer;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+    
+@keyframes rotateImage {
+  from {
+    transform: rotate3d(0, 1, 1, 0deg); 
+  }
+  to {
+    transform: rotate3d(0, 1, 1, 360deg);
+  }
+}
+</style>
